@@ -33,30 +33,6 @@ flint.hears('/hello', function(bot, trigger) {
 });
 
 
-/* On mention with command, using other trigger data, can use lite markdown formatting
-ex "@botname /whoami"
-*/
-flint.hears('/whoami', function(bot, trigger) {
-  console.log("/whoami fired");
-  //the "trigger" parameter gives you access to data about the user who entered the command
-  let roomId = "*" + trigger.roomId + "*";
-  let roomTitle = "**" + trigger.roomTitle + "**";
-  let personEmail = trigger.personEmail;
-  let personDisplayName = trigger.personDisplayName;
-  let outputString = `${personDisplayName} here is some of your information: \n\n\n **Room:** you are in "${roomTitle}" \n\n\n **Room id:** ${roomId} \n\n\n **Email:** your email on file is *${personEmail}*`;
-  bot.say("markdown", outputString);
-});
-
-/* On mention with command arguments
-ex User enters @botname /echo phrase, the bot will take the arguments and echo them back
-*/
-flint.hears('/echo', function(bot, trigger) {
-  console.log("/echo fired");
-  let phrase = trigger.args.slice(1).join(" ");
-  let outputString = `Ok, I'll say it: "${phrase}"`;
-  bot.say(outputString);
-});
-
 /****
 ## Server config & housekeeping
 ****/
