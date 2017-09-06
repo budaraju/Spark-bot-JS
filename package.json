@@ -1,25 +1,26 @@
 {
-  "name": "sparkbotstarter",
+  "name": "SparkbotJS",
   "version": "1.0.0",
-  "description": "Starter kit for creating a Cisco Spark bot",
+  "description": "creating a Cisco Spark bot",
   "main": "index.js",
   "scripts": {
     "start": "npm install && node --use_strict index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valgaze/sparkbotstarter.git"
+    "url": "git+https://github.com/budaraju/Spark-bot-JS.git"
   },
   "keywords": [
     "Cisco",
     "Spark"
+    "SparkAPI"
   ],
-  "author": "Victor Algaze",
+  "author": "Harshavardhan Budaraju",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/valgaze/sparkbotstarter/issues"
+    "url": "https://github.com/budaraju/Spark-bot-JS/issues"
   },
-  "homepage": "https://github.com/valgaze/sparkbotstarter#readme",
+  "homepage": "https://github.com/budaraju/Spark-bot-JS#README.md",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
