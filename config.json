@@ -1,5 +1,5 @@
 {
-  "webhookUrl": "http://PUTWEBADDRESSHERE",
+  "webhookUrl": "https://<URL>",
   "token": "__PUT_BOT_API_KEY_HERE",
   "port": 8080
 }
