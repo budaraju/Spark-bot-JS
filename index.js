@@ -25,10 +25,10 @@ flint.on("initialized", function() {
 
 
 /* On mention with command
-ex User enters @botname /hello, the bot will write back
+ex User enters @botname /helo, the bot will write back
 */
-flint.hears('/hello', function(bot, trigger) {
-  console.log("/hello fired");
+flint.hears('/helo', function(bot, trigger) {
+  console.log("/helo fired");
   bot.say('%s, you said hello to me!', trigger.personDisplayName);
 });
 
